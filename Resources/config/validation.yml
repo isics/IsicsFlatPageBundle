@@ -1,0 +1,16 @@
+Isics\FlatPageBundle\Entity\FlatPage:
+    properties:
+        url:
+            - NotBlank: ~
+        title:
+            - NotBlank: ~
+        metaKeywords:
+            - NotBlank: ~
+        metaDescription:
+            - NotBlank: ~
+        content:
+            - NotBlank: ~
+        templateName:
+            - NotBlank: ~
+        isPublished:
+            - NotNull: ~
