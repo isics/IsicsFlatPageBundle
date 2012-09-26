@@ -40,14 +40,14 @@ class FlatPage
     /**
      * @var string $metaDescription META Description
      *
-     * @ORM\Column(name="meta_description", type="string", length=250, nullable=false)
+     * @ORM\Column(name="meta_description", type="string", length=250, nullable=true)
      */
     private $metaDescription;
 
     /**
      * @var string $metaKeywords META Keywords
      *
-     * @ORM\Column(name="meta_keywords", type="string", length=1000, nullable=false)
+     * @ORM\Column(name="meta_keywords", type="string", length=1000, nullable=true)
      */
     private $metaKeywords;
 
@@ -100,7 +100,7 @@ class FlatPage
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -120,7 +120,7 @@ class FlatPage
     /**
      * Get url
      *
-     * @return string 
+     * @return string
      */
     public function getUrl()
     {
@@ -140,7 +140,7 @@ class FlatPage
     /**
      * Get title
      *
-     * @return string 
+     * @return string
      */
     public function getTitle()
     {
@@ -160,7 +160,7 @@ class FlatPage
     /**
      * Get metaDescription
      *
-     * @return string 
+     * @return string
      */
     public function getMetaDescription()
     {
@@ -180,7 +180,7 @@ class FlatPage
     /**
      * Get metaKeywords
      *
-     * @return string 
+     * @return string
      */
     public function getMetaKeywords()
     {
@@ -200,7 +200,7 @@ class FlatPage
     /**
      * Get content
      *
-     * @return text 
+     * @return text
      */
     public function getContent()
     {
@@ -220,7 +220,7 @@ class FlatPage
     /**
      * Get templateName
      *
-     * @return string 
+     * @return string
      */
     public function getTemplateName()
     {
@@ -240,7 +240,7 @@ class FlatPage
     /**
      * Get isPublished
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getIsPublished()
     {
@@ -260,7 +260,7 @@ class FlatPage
     /**
      * Get createdAt
      *
-     * @return datetime 
+     * @return datetime
      */
     public function getCreatedAt()
     {
@@ -280,7 +280,7 @@ class FlatPage
     /**
      * Get updatedAt
      *
-     * @return datetime 
+     * @return datetime
      */
     public function getUpdatedAt()
     {

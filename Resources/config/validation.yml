@@ -4,10 +4,6 @@ Isics\FlatPageBundle\Entity\FlatPage:
             - NotBlank: ~
         title:
             - NotBlank: ~
-        metaKeywords:
-            - NotBlank: ~
-        metaDescription:
-            - NotBlank: ~
         content:
             - NotBlank: ~
         templateName:

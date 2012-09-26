@@ -1,0 +1,4 @@
+services:
+    isics_flat_page.flat_page_manager:
+        class:     Isics\FlatPageBundle\Manager\FlatPageManager
+        arguments: [@doctrine.orm.entity_manager]
