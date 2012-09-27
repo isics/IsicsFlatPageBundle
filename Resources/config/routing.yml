@@ -1,0 +1,3 @@
+isics_flat_page_show:
+    pattern:      /{url}
+    defaults:     { _controller: IsicsFlatPageBundle:Main:show }

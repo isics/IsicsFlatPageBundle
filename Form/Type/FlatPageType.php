@@ -13,7 +13,7 @@ class FlatPageType extends AbstractType
     public function buildForm(FormBuilder $builder, array $options)
     {
         $builder
-            ->add('url', 'text')
+            ->add('url', 'text', array('required' => false))
             ->add('title', 'text')
             ->add('metaDescription', 'textarea', array('required' => false, 'label' => 'META Description'))
             ->add('metaKeywords', 'textarea', array('required' => false, 'label' => 'META Keywords'))

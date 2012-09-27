@@ -10,18 +10,18 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class MainController extends Controller
 {
     /**
-     * Show a page
+     * Shows a page
      *
      * @param string $url Relative url
      */
-    public function showAction($url = '/')
+    public function showAction($url = '')
     {
         $page = $this->getDoctrine()
             ->getRepository('IsicsFlatPageBundle:FlatPage')
-            ->findOneBuyUrl($url);
+            ->findOneBuyUrl('/'.$url);
 
         if (null === $page) {
-            throw new NotFoundHttpException();
+            throw $this->createNotFoundException();
         }
 
         return $this->render(
